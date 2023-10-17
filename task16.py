@@ -3,7 +3,7 @@ products = (
     ["Банани", 1.0, 15],
     ["Апельсини", 3.0, 8]
 )
-print()
+
 
 def price_list(products):
     for i in products:
