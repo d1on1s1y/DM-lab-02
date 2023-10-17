@@ -1,2 +1,2 @@
-array = range(999)
+array = list(range(999))
 #print(array)
