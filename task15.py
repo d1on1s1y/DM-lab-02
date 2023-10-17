@@ -1,4 +1,4 @@
-data = [
+data_tuple = [
     ["Іванов Іван Іванович", "10-01-1980"],
     ["Петров Петро Петрович", "15-03-1995"],
     ["Сидоров Андрій Олександрович", "05-07-1989"],
@@ -7,9 +7,12 @@ data = [
     ["Григоренко Василь Володимирович", "18-04-1976"]
 ]
 
-data_tuple = tuple(data)
 
 def sort_by_birthdate(data):
-    
-    sorted_data = sorted(data, key=lambda x: x[1])
+    sorted_data = sorted(data, key=lambda x: int(x[1].split('-')[2])) 
     return sorted_data
+
+
+sorted_data = sort_by_birthdate(data_tuple)
+for item in sorted_data:
+    print(item)
